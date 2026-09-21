@@ -1,0 +1,654 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Geladão Fortaleza | Bebidas Geladas, Gelo e Combos Delivery</title>
+    <meta name="description" content="Distribuidora de bebidas geladas em Fortaleza. Cervejas, gelo saborizado, copões, destilados e combos. Peça pelo WhatsApp e receba em casa ou retire no local na Parangaba.">
+    <meta name="keywords" content="geladão em fortaleza, bebidas geladas em fortaleza, distribuidora de bebidas em fortaleza, cerveja gelada em fortaleza, cerveja delivery fortaleza, gelo saborizado fortaleza, copão fortaleza">
+    <meta name="author" content="Geladão Fortaleza">
+    <meta name="robots" content="index, follow">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="Geladão Fortaleza | Bebidas Geladas e Combos">
+    <meta property="og:description" content="Cervejas, gelo saborizado, copões, destilados e combos. Peça pelo WhatsApp e receba em casa ou retire no local na Parangaba.">
+    <meta property="og:image" content="https://images.unsplash.com/photo-1584225064785-c62a8b43d148?auto=format&fit=crop&w=800&q=80">
+    <meta property="og:url" content="https://www.geladaofortaleza.com.br">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="pt_BR">
+
+    <!-- Canonical -->
+    <link rel="canonical" href="https://www.geladaofortaleza.com.br">
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'geladao-bg': '#F5F6F8',
+                        'geladao-navy': '#0B1F3A',
+                        'geladao-red': '#E53935',
+                        'geladao-white': '#FFFFFF',
+                        'geladao-graphite': '#1F2933',
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'system-ui', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+
+    <!-- Custom Styles -->
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+        
+        .no-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+        .no-scrollbar {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+        
+        html {
+            scroll-behavior: smooth;
+        }
+        
+        .focus-ring:focus-visible {
+            outline: 2px solid #E53935;
+            outline-offset: 2px;
+        }
+    </style>
+
+    <!-- JSON-LD Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "LiquorStore",
+      "name": "Geladão Fortaleza",
+      "image": "https://images.unsplash.com/photo-1584225064785-c62a8b43d148?auto=format&fit=crop&w=800&q=80",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Av. dos Expedicionários, 1500",
+        "addressLocality": "Fortaleza",
+        "addressRegion": "CE",
+        "postalCode": "60720-000",
+        "addressCountry": "BR"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": -3.7766,
+        "longitude": -38.5976
+      },
+      "url": "https://www.geladaofortaleza.com.br",
+      "telephone": "+5585999999999",
+      "openingHoursSpecification": [
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday"],
+          "opens": "10:00",
+          "closes": "00:00"
+        },
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": ["Friday", "Saturday"],
+          "opens": "10:00",
+          "closes": "02:00"
+        },
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": "Sunday",
+          "opens": "10:00",
+          "closes": "00:00"
+        }
+      ],
+      "priceRange": "$$"
+    }
+    </script>
+</head>
+<body class="bg-geladao-bg text-geladao-graphite font-sans antialiased pb-20 md:pb-0">
+
+    <!-- Header -->
+    <header class="sticky top-0 z-50 bg-geladao-navy text-geladao-white shadow-md">
+        <div class="container mx-auto px-4 py-3 flex items-center justify-between">
+            <a href="#" class="flex items-center gap-2 focus-ring rounded-lg" aria-label="Ir para o início">
+                <svg class="w-8 h-8 text-geladao-red" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"/></svg>
+                <div>
+                    <h1 class="text-xl font-extrabold leading-none tracking-tight">GELADÃO</h1>
+                    <span class="text-xs text-gray-300 font-medium tracking-wider">FORTALEZA</span>
+                </div>
+            </a>
+            
+            <nav class="hidden md:flex items-center gap-6">
+                <a href="#cardapio" class="text-sm font-medium hover:text-geladao-red transition-colors focus-ring rounded">Cardápio</a>
+                <a href="#combos" class="text-sm font-medium hover:text-geladao-red transition-colors focus-ring rounded">Combos</a>
+                <a href="#entrega" class="text-sm font-medium hover:text-geladao-red transition-colors focus-ring rounded">Entrega</a>
+                <a href="#contato" class="text-sm font-medium hover:text-geladao-red transition-colors focus-ring rounded">Contato</a>
+            </nav>
+
+            <a href="https://wa.me/5585999999999?text=Olá!%20Quero%20fazer%20um%20pedido%20de%20bebidas.%20Pode%20me%20enviar%20as%20opções%20disponíveis?" target="_blank" rel="noopener noreferrer" class="hidden md:flex bg-geladao-red hover:bg-red-700 text-white font-bold py-2 px-4 rounded-lg items-center gap-2 transition-colors focus-ring">
+                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+                Pedir Agora
+            </a>
+
+            <!-- Mobile Menu Button -->
+            <button id="mobileMenuBtn" class="md:hidden p-2 text-white focus-ring rounded-lg" aria-label="Abrir menu" aria-expanded="false">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
+            </button>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div id="mobileMenu" class="hidden md:hidden bg-geladao-navy border-t border-gray-700 px-4 py-4 space-y-3">
+            <a href="#cardapio" class="block text-white font-medium py-2 focus-ring rounded">Cardápio</a>
+            <a href="#combos" class="block text-white font-medium py-2 focus-ring rounded">Combos</a>
+            <a href="#entrega" class="block text-white font-medium py-2 focus-ring rounded">Entrega e Retirada</a>
+            <a href="#contato" class="block text-white font-medium py-2 focus-ring rounded">Contato</a>
+            <a href="https://wa.me/5585999999999?text=Olá!%20Quero%20fazer%20um%20pedido%20de%20bebidas." target="_blank" rel="noopener noreferrer" class="block bg-geladao-red text-white font-bold py-3 px-4 rounded-lg text-center mt-4">
+                Pedir pelo WhatsApp
+            </a>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="relative bg-geladao-navy text-geladao-white overflow-hidden">
+            <div class="absolute inset-0 opacity-20">
+                <img src="https://images.unsplash.com/photo-1584225064785-c62a8b43d148?auto=format&fit=crop&w=1200&q=80" alt="Bebidas geladas e gelo" class="w-full h-full object-cover">
+            </div>
+            <div class="relative container mx-auto px-4 py-16 md:py-24 flex flex-col items-center text-center">
+                <span class="inline-block bg-geladao-red text-white text-xs font-bold px-3 py-1 rounded-full mb-4 uppercase tracking-wider">Delivery e Retirada</span>
+                <h2 class="text-3xl md:text-5xl font-extrabold leading-tight mb-4 max-w-3xl">
+                    Bebidas estupidamente geladas para curtir do seu jeito.
+                </h2>
+                <p class="text-gray-300 text-lg md:text-xl mb-8 max-w-2xl">
+                    Cervejas, copões, destilados, energéticos, gelo e muito mais. Escolha, peça pelo WhatsApp e receba ou retire.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4 w-full sm:w-auto">
+                    <a href="#cardapio" class="bg-geladao-white text-geladao-navy font-bold py-3 px-8 rounded-lg hover:bg-gray-100 transition-colors focus-ring">
+                        Ver cardápio
+                    </a>
+                    <a href="https://wa.me/5585999999999?text=Olá!%20Quero%20fazer%20um%20pedido%20de%20bebidas.%20Pode%20me%20enviar%20as%20opções%20disponíveis?" target="_blank" rel="noopener noreferrer" class="bg-geladao-red text-white font-bold py-3 px-8 rounded-lg hover:bg-red-700 transition-colors flex items-center justify-center gap-2 focus-ring">
+                        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+                        Pedir pelo WhatsApp
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Quick Category Navigation -->
+        <section class="bg-geladao-white border-b border-gray-200 sticky top-[60px] md:top-[64px] z-40 shadow-sm">
+            <div class="container mx-auto px-4 py-3">
+                <div class="flex overflow-x-auto pb-1 gap-2 no-scrollbar" id="category-nav">
+                    <button onclick="setCategory('todos')" class="category-btn whitespace-nowrap px-4 py-2 rounded-full text-sm font-semibold bg-geladao-navy text-white transition-colors focus-ring" data-category="todos">Todos</button>
+                    <button onclick="setCategory('cervejas')" class="category-btn whitespace-nowrap px-4 py-2 rounded-full text-sm font-semibold bg-gray-100 text-geladao-graphite hover:bg-gray-200 transition-colors focus-ring" data-category="cervejas">Cervejas</button>
+                    <button onclick="setCategory('gelo-copoes')" class="category-btn whitespace-nowrap px-4 py-2 rounded-full text-sm font-semibold bg-gray-100 text-geladao-graphite hover:bg-gray-200 transition-colors focus-ring" data-category="gelo-copoes">Gelo & Copões</button>
+                    <button onclick="setCategory('destilados')" class="category-btn whitespace-nowrap px-4 py-2 rounded-full text-sm font-semibold bg-gray-100 text-geladao-graphite hover:bg-gray-200 transition-colors focus-ring" data-category="destilados">Destilados</button>
+                    <button onclick="setCategory('energeticos')" class="category-btn whitespace-nowrap px-4 py-2 rounded-full text-sm font-semibold bg-gray-100 text-geladao-graphite hover:bg-gray-200 transition-colors focus-ring" data-category="energeticos">Energéticos</button>
+                    <button onclick="setCategory('refrigerantes-agua')" class="category-btn whitespace-nowrap px-4 py-2 rounded-full text-sm font-semibold bg-gray-100 text-geladao-graphite hover:bg-gray-200 transition-colors focus-ring" data-category="refrigerantes-agua">Refrigerantes & Água</button>
+                    <button onclick="setCategory('petiscos-conveniencia')" class="category-btn whitespace-nowrap px-4 py-2 rounded-full text-sm font-semibold bg-gray-100 text-geladao-graphite hover:bg-gray-200 transition-colors focus-ring" data-category="petiscos-conveniencia">Petiscos</button>
+                    <button onclick="setCategory('combos')" class="category-btn whitespace-nowrap px-4 py-2 rounded-full text-sm font-semibold bg-geladao-red text-white hover:bg-red-700 transition-colors focus-ring" data-category="combos">Combos</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Search Section -->
+        <section class="container mx-auto px-4 py-8" id="cardapio">
+            <div class="max-w-2xl mx-auto">
+                <div class="relative">
+                    <label for="searchInput" class="sr-only">Buscar produtos</label>
+                    <input type="search" id="searchInput" placeholder="O que você está procurando? (Ex: Heineken, Melancia, 350ml)" class="w-full pl-12 pr-12 py-4 rounded-xl border border-gray-300 focus:ring-2 focus:ring-geladao-navy focus:border-geladao-navy outline-none transition-all text-geladao-graphite font-medium shadow-sm" aria-label="Buscar produtos">
+                    <svg class="w-6 h-6 text-gray-400 absolute left-4 top-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path></svg>
+                    <button onclick="clearSearch()" class="absolute right-4 top-4 text-gray-400 hover:text-geladao-graphite transition-colors focus-ring rounded" aria-label="Limpar busca">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
+                    </button>
+                </div>
+                <div class="flex justify-between items-center mt-4 px-1">
+                    <p id="product-count" class="text-sm text-gray-500 font-medium">Carregando produtos...</p>
+                    <button onclick="clearFilters()" class="text-sm text-geladao-navy font-semibold hover:text-geladao-red transition-colors focus-ring rounded">Limpar filtros</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Combos Section -->
+        <section id="combos" class="container mx-auto px-4 py-8">
+            <div class="flex items-center gap-3 mb-6">
+                <span class="bg-geladao-red text-white text-xs font-bold px-2 py-1 rounded">OFERTAS</span>
+                <h2 class="text-2xl font-extrabold text-geladao-navy">Combos para o seu rolê</h2>
+            </div>
+            <div id="combos-container" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                <!-- Combos injected via JS -->
+            </div>
+        </section>
+
+        <!-- Products Grid -->
+        <section class="container mx-auto px-4 pb-12">
+            <h2 class="text-2xl font-extrabold text-geladao-navy mb-6">Cardápio Completo</h2>
+            <div id="products-container" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+                <!-- Products injected via JS -->
+            </div>
+        </section>
+
+        <!-- Delivery & Pickup Section -->
+        <section id="entrega" class="bg-geladao-white border-y border-gray-200 py-16">
+            <div class="container mx-auto px-4">
+                <div class="grid md:grid-cols-2 gap-12">
+                    <div>
+                        <h2 class="text-2xl font-extrabold text-geladao-navy mb-6">Receba seu pedido onde estiver</h2>
+                        <div class="space-y-4">
+                            <div class="flex items-start gap-4">
+                                <div class="bg-geladao-bg p-3 rounded-full text-geladao-navy">
+                                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
+                                </div>
+                                <div>
+                                    <h3 class="font-bold text-geladao-graphite">Delivery Rápido</h3>
+                                    <p class="text-gray-600 text-sm">Entrega em toda Fortaleza. Taxa a partir de R$ 5,00. Consulte disponibilidade para seu endereço.</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start gap-4">
+                                <div class="bg-geladao-bg p-3 rounded-full text-geladao-navy">
+                                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                                </div>
+                                <div>
+                                    <h3 class="font-bold text-geladao-graphite">Pedido Mínimo</h3>
+                                    <p class="text-gray-600 text-sm">Apenas R$ 20,00 para delivery. Aceitamos Pix, cartão e dinheiro.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <h2 class="text-2xl font-extrabold text-geladao-navy mb-6">Retire no Geladão</h2>
+                        <div class="bg-geladao-bg p-6 rounded-xl border border-gray-200">
+                            <p class="font-semibold text-geladao-graphite mb-2">Endereço:</p>
+                            <p class="text-gray-600 mb-4">Av. dos Expedicionários, 1500 — Parangaba, Fortaleza — CE</p>
+                            
+                            <p class="font-semibold text-geladao-graphite mb-2">Horário de Funcionamento:</p>
+                            <ul class="text-gray-600 text-sm space-y-1 mb-6">
+                                <li>Segunda a quinta: 10h às 00h</li>
+                                <li>Sexta e sábado: 10h às 02h</li>
+                                <li>Domingo: 10h às 00h</li>
+                            </ul>
+                            
+                            <a href="https://www.google.com/maps/search/?api=1&query=Av.+dos+Expedicionários,+1500,+Parangaba,+Fortaleza,+CE" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 bg-geladao-navy text-white font-semibold py-3 px-6 rounded-lg hover:bg-opacity-90 transition-colors focus-ring">
+                                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path></svg>
+                                Ver localização no Maps
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section class="container mx-auto px-4 py-16">
+            <div class="max-w-3xl mx-auto text-center">
+                <h2 class="text-2xl font-extrabold text-geladao-navy mb-4">Sobre o Geladão Fortaleza</h2>
+                <p class="text-gray-600 leading-relaxed mb-8">
+                    Somos uma distribuidora de bebidas local focada em oferecer variedade, praticidade e atendimento rápido. 
+                    Nosso compromisso é garantir que sua bebida esteja sempre estupidamente gelada, seja para um churrasco, 
+                    um rolê com os amigos ou para curtir o fim de semana em casa. Peça pelo WhatsApp e experimente a agilidade do nosso delivery ou retire no local.
+                </p>
+                <div class="flex flex-wrap justify-center gap-4 text-sm font-semibold text-geladao-navy">
+                    <span class="flex items-center gap-2 bg-geladao-bg px-4 py-2 rounded-full">❄️ Bebidas Geladas</span>
+                    <span class="flex items-center gap-2 bg-geladao-bg px-4 py-2 rounded-full">🚀 Atendimento Rápido</span>
+                    <span class="flex items-center gap-2 bg-geladao-bg px-4 py-2 rounded-full">📱 Pedido Fácil</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials -->
+        <section class="bg-geladao-white border-y border-gray-200 py-16">
+            <div class="container mx-auto px-4">
+                <h2 class="text-2xl font-extrabold text-geladao-navy text-center mb-10">O que dizem nossos clientes</h2>
+                <div class="grid md:grid-cols-3 gap-6">
+                    <div class="bg-geladao-bg p-6 rounded-xl">
+                        <div class="flex text-geladao-red mb-3">★★★★★</div>
+                        <p class="text-geladao-graphite italic mb-4">"Chegou tudo bem gelado e o pedido pelo WhatsApp foi muito rápido. O copão de melancia é sensacional!"</p>
+                        <p class="text-sm font-bold text-geladao-navy">— Lucas M., Parangaba</p>
+                    </div>
+                    <div class="bg-geladao-bg p-6 rounded-xl">
+                        <div class="flex text-geladao-red mb-3">★★★★★</div>
+                        <p class="text-geladao-graphite italic mb-4">"Melhor distribuidora da região. Preços justos e o delivery nunca me deixou na mão no fim de semana."</p>
+                        <p class="text-sm font-bold text-geladao-navy">— Fernanda S., Benfica</p>
+                    </div>
+                    <div class="bg-geladao-bg p-6 rounded-xl">
+                        <div class="flex text-geladao-red mb-3">★★★★★</div>
+                        <p class="text-geladao-graphite italic mb-4">"O combo de churrasco salvou minha reunião. Tudo chegou geladinho e o carvão era de primeira."</p>
+                        <p class="text-sm font-bold text-geladao-navy">— Roberto C., Messejana</p>
+                    </div>
+                </div>
+                <p class="text-center text-xs text-gray-400 mt-6">* Depoimentos fictícios para fins de demonstração de layout.</p>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer id="contato" class="bg-geladao-navy text-gray-300 py-12 pb-24 md:pb-12">
+        <div class="container mx-auto px-4">
+            <div class="grid md:grid-cols-4 gap-8 mb-8">
+                <div class="md:col-span-1">
+                    <div class="flex items-center gap-2 mb-4 text-white">
+                        <svg class="w-8 h-8 text-geladao-red" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"/></svg>
+                        <span class="text-xl font-extrabold">GELADÃO</span>
+                    </div>
+                    <p class="text-sm text-gray-400">Sua bebida gelada do jeito que você gosta. Delivery e retirada em Fortaleza.</p>
+                </div>
+                <div>
+                    <h4 class="text-white font-bold mb-4">Categorias</h4>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="#" onclick="setCategory('cervejas'); return false;" class="hover:text-geladao-red transition-colors">Cervejas</a></li>
+                        <li><a href="#" onclick="setCategory('gelo-copoes'); return false;" class="hover:text-geladao-red transition-colors">Gelo & Copões</a></li>
+                        <li><a href="#" onclick="setCategory('destilados'); return false;" class="hover:text-geladao-red transition-colors">Destilados</a></li>
+                        <li><a href="#" onclick="setCategory('combos'); return false;" class="hover:text-geladao-red transition-colors">Combos</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-white font-bold mb-4">Contato</h4>
+                    <ul class="space-y-2 text-sm">
+                        <li class="flex items-center gap-2">
+                            <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+                            (85) 99999-9999
+                        </li>
+                        <li class="flex items-center gap-2">
+                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path></svg>
+                            Parangaba, Fortaleza - CE
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-white font-bold mb-4">Redes Sociais</h4>
+                    <div class="flex gap-4">
+                        <a href="#" class="bg-gray-700 hover:bg-geladao-red p-2 rounded-full transition-colors focus-ring" aria-label="Instagram">
+                            <svg class="w-5 h-5 text-white" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+                        </a>
+                        <a href="#" class="bg-gray-700 hover:bg-geladao-red p-2 rounded-full transition-colors focus-ring" aria-label="Facebook">
+                            <svg class="w-5 h-5 text-white" fill="currentColor" viewBox="0 0 24 24"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-gray-700 pt-8 text-center text-sm text-gray-500">
+                <p>&copy; 2026 Geladão Fortaleza. Todos os direitos reservados. Beba com moderação.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Mobile Sticky Order Bar -->
+    <div class="fixed bottom-0 left-0 right-0 bg-geladao-white border-t border-gray-200 p-4 shadow-[0_-4px_6px_-1px_rgba(0,0,0,0.1)] md:hidden z-40">
+        <a href="https://wa.me/5585999999999?text=Olá!%20Quero%20fazer%20um%20pedido%20de%20bebidas.%20Pode%20me%20enviar%20as%20opções%20disponíveis?" target="_blank" rel="noopener noreferrer" class="w-full bg-geladao-red text-white font-bold py-3.5 px-4 rounded-xl flex items-center justify-center gap-2 shadow-md hover:bg-red-700 transition-colors focus-ring">
+            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+            🛒 Pedir pelo WhatsApp
+        </a>
+    </div>
+
+    <!-- Floating WhatsApp Button (Desktop) -->
+    <a href="https://wa.me/5585999999999?text=Olá!%20Quero%20fazer%20um%20pedido%20de%20bebidas.%20Pode%20me%20enviar%20as%20opções%20disponíveis?" target="_blank" rel="noopener noreferrer" class="fixed bottom-6 right-6 bg-green-500 text-white p-4 rounded-full shadow-lg hover:bg-green-600 transition-colors z-50 hidden md:flex items-center justify-center focus-ring" aria-label="Fale conosco no WhatsApp">
+        <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+    </a>
+
+    <!-- JavaScript Logic -->
+    <script>
+        // Centralized Configuration
+        const BUSINESS_CONFIG = {
+            brand: "Geladão Fortaleza",
+            slogan: "Sua bebida gelada do jeito que você gosta.",
+            whatsapp: "5585999999999",
+            phone: "(85) 99999-9999",
+            address: "Av. dos Expedicionários, 1500 — Parangaba, Fortaleza, CE",
+            neighborhood: "Parangaba",
+            city: "Fortaleza",
+            state: "CE",
+            hours: {
+                weekdays: "10h às 00h",
+                weekend: "10h às 02h",
+                sunday: "10h às 00h"
+            },
+            deliveryMin: "R$ 20,00",
+            deliveryFee: "A partir de R$ 5,00"
+        };
+
+        // Product Data Architecture
+        const products = [
+            // Cervejas
+            { id: 1, category: "cervejas", name: "Itaipava", description: "Cerveja lager gelada", volume: "300ml", price: 4.99, image: "https://images.unsplash.com/photo-1608270586620-248524c67de9?auto=format&fit=crop&w=400&q=80", badge: "Buxudinha", available: true },
+            { id: 2, category: "cervejas", name: "Devassa", description: "Cerveja lager gelada", volume: "300ml", price: 4.99, image: "https://images.unsplash.com/photo-1608270586620-248524c67de9?auto=format&fit=crop&w=400&q=80", badge: "Buxudinha", available: true },
+            { id: 3, category: "cervejas", name: "Skol", description: "Cerveja lager gelada", volume: "300ml", price: 4.99, image: "https://images.unsplash.com/photo-1608270586620-248524c67de9?auto=format&fit=crop&w=400&q=80", badge: "Buxudinha", available: true },
+            { id: 4, category: "cervejas", name: "Itaipava", description: "Cerveja lager", volume: "350ml", price: 5.49, image: "https://images.unsplash.com/photo-1608270586620-248524c67de9?auto=format&fit=crop&w=400&q=80", badge: null, available: true },
+            { id: 5, category: "cervejas", name: "Devassa", description: "Cerveja lager", volume: "350ml", price: 5.49, image: "https://images.unsplash.com/photo-1608270586620-248524c67de9?auto=format&fit=crop&w=400&q=80", badge: null, available: true },
+            { id: 6, category: "cervejas", name: "Skol", description: "Cerveja lager", volume: "350ml", price: 5.49, image: "https://images.unsplash.com/photo-1608270586620-248524c67de9?auto=format&fit=crop&w=400&q=80", badge: null, available: true },
+            { id: 7, category: "cervejas", name: "Brahma Duplo Malte", description: "Cerveja puro malte", volume: "350ml", price: 6.99, image: "https://images.unsplash.com/photo-1608270586620-248524c67de9?auto=format&fit=crop&w=400&q=80", badge: "Puro Malte", available: true },
+            { id: 8, category: "cervejas", name: "Amstel", description: "Cerveja puro malte", volume: "350ml", price: 6.99, image: "https://images.unsplash.com/photo-1608270586620-248524c67de9?auto=format&fit=crop&w=400&q=80", badge: "Puro Malte", available: true },
+            { id: 9, category: "cervejas", name: "Heineken", description: "Cerveja puro malte premium", volume: "350ml", price: 7.99, image: "https://images.unsplash.com/photo-1608270586620-248524c67de9?auto=format&fit=crop&w=400&q=80", badge: "Puro Malte", available: true },
+            { id: 10, category: "cervejas", name: "Cerveja Long Neck", description: "Diversas marcas", volume: "600ml", price: 12.90, image: "https://images.unsplash.com/photo-1608270586620-248524c67de9?auto=format&fit=crop&w=400&q=80", badge: null, available: true },
+            { id: 11, category: "cervejas", name: "Cerveja Litrão", description: "Diversas marcas", volume: "1L", price: 14.90, image: "https://images.unsplash.com/photo-1608270586620-248524c67de9?auto=format&fit=crop&w=400&q=80", badge: "Econômico", available: true },
+            
+            // Gelo & Copões
+            { id: 12, category: "gelo-copoes", name: "Gelo Saborizado de Melancia", description: "Gelo saborizado para preparar seu copão", volume: "500g", price: 8.99, image: "https://images.unsplash.com/photo-1543255006-d6395b6f1171?auto=format&fit=crop&w=400&q=80", badge: "Mais pedido", available: true },
+            { id: 13, category: "gelo-copoes", name: "Gelo Saborizado de Maracujá", description: "Gelo saborizado para preparar seu copão", volume: "500g", price: 8.99, image: "https://images.unsplash.com/photo-1543255006-d6395b6f1171?auto=format&fit=crop&w=400&q=80", badge: null, available: true },
+            { id: 14, category: "gelo-copoes", name: "Gelo Saborizado de Coco", description: "Gelo saborizado para preparar seu copão", volume: "500g", price: 8.99, image: "https://images.unsplash.com/photo-1543255006-d6395b6f1171?auto=format&fit=crop&w=400&q=80", badge: null, available: true },
+            { id: 15, category: "gelo-copoes", name: "Gelo Saborizado de Maçã Verde", description: "Gelo saborizado para preparar seu copão", volume: "500g", price: 8.99, image: "https://images.unsplash.com/photo-1543255006-d6395b6f1171?auto=format&fit=crop&w=400&q=80", badge: null, available: true },
+            { id: 16, category: "gelo-copoes", name: "Gelo Saborizado de Menta", description: "Gelo saborizado para preparar seu copão", volume: "500g", price: 8.99, image: "https://images.unsplash.com/photo-1543255006-d6395b6f1171?auto=format&fit=crop&w=400&q=80", badge: null, available: true },
+            { id: 17, category: "gelo-copoes", name: "Copão de Melancia", description: "Combo pronto: bebida, gelo e sabor", volume: "700ml", price: 15.90, image: "https://images.unsplash.com/photo-1513558161293-cdaf765ed2fd?auto=format&fit=crop&w=400&q=80", badge: "Pronto p/ beber", available: true },
+            { id: 18, category: "gelo-copoes", name: "Copão de Maracujá", description: "Combo pronto: bebida, gelo e sabor", volume: "700ml", price: 15.90, image: "https://images.unsplash.com/photo-1513558161293-cdaf765ed2fd?auto=format&fit=crop&w=400&q=80", badge: "Pronto p/ beber", available: true },
+            { id: 19, category: "gelo-copoes", name: "Copão de Menta", description: "Combo pronto: bebida, gelo e sabor", volume: "700ml", price: 15.90, image: "https://images.unsplash.com/photo-1513558161293-cdaf765ed2fd?auto=format&fit=crop&w=400&q=80", badge: "Pronto p/ beber", available: true },
+            { id: 20, category: "gelo-copoes", name: "Copão Tropical", description: "Mix de sabores tropicais", volume: "700ml", price: 16.90, image: "https://images.unsplash.com/photo-1513558161293-cdaf765ed2fd?auto=format&fit=crop&w=400&q=80", badge: "Especial", available: true },
+            { id: 21, category: "gelo-copoes", name: "Copão Especial da Casa", description: "Receita exclusiva com destilado", volume: "700ml", price: 24.90, image: "https://images.unsplash.com/photo-1513558161293-cdaf765ed2fd?auto=format&fit=crop&w=400&q=80", badge: "Premium", available: true },
+
+            // Destilados
+            { id: 22, category: "destilados", name: "Black & White", description: "Whisky escocês", volume: "1L", price: 89.90, image: "https://images.unsplash.com/photo-1527281400683-1aae777175f8?auto=format&fit=crop&w=400&q=80", badge: null, available: true },
+            { id: 23, category: "destilados", name: "Gin Rocks", description: "Gin nacional", volume: "750ml", price: 45.90, image: "https://images.unsplash.com/photo-1514362545857-3bc16c4c7d1b?auto=format&fit=crop&w=400&q=80", badge: "Promo", available: true },
+            { id: 24, category: "destilados", name: "Tanqueray", description: "Gin importado premium", volume: "750ml", price: 149.90, image: "https://images.unsplash.com/photo-1514362545857-3bc16c4c7d1b?auto=format&fit=crop&w=400&q=80", badge: "Premium", available: true },
+            { id: 25, category: "destilados", name: "Vodka Nacional", description: "Vodka tradicional", volume: "998ml", price: 34.90, image: "https://images.unsplash.com/photo-1613253574494-2b77b08391d3?auto=format&fit=crop&w=400&q=80", badge: null, available: true },
+            { id: 26, category: "destilados", name: "Vodka Importada", description: "Vodka premium", volume: "750ml", price: 79.90, image: "https://images.unsplash.com/photo-1613253574494-2b77b08391d3?auto=format&fit=crop&w=400&q=80", badge: null, available: true },
+            { id: 27, category: "destilados", name: "Cachaça Popular", description: "Cachaça prata", volume: "965ml", price: 18.90, image: "https://images.unsplash.com/photo-1598155523122-38423bb4d6cf?auto=format&fit=crop&w=400&q=80", badge: null, available: true },
+            { id: 28, category: "destilados", name: "Corote", description: "Bebida mista saborizada", volume: "275ml", price: 6.99, image: "https://images.unsplash.com/photo-1598155523122-38423bb4d6cf?auto=format&fit=crop&w=400&q=80", badge: "Popular", available: true },
+
+            // Energéticos
+            { id: 29, category: "energeticos", name: "Monster Energy", description: "Bebida energética", volume: "473ml", price: 10.99, image: "https://images.unsplash.com/photo-1622483767028-3f66f32aef97?auto=format&fit=crop&w=400&q=80", badge: null, available: true },
+            { id: 30, category: "energeticos", name: "Red Bull", description: "Bebida energética", volume: "250ml", price: 9.99, image: "https://images.unsplash.com/photo-1622483767028-3f66f32aef97?auto=format&fit=crop&w=400&q=80", badge: null, available: true },
+            { id: 31, category: "energeticos", name: "Baly", description: "Bebida energética saborizada", volume: "473ml", price: 8.99, image: "https://images.unsplash.com/photo-1622483767028-3f66f32aef97?auto=format&fit=crop&w=400&q=80", badge: "Sabor Frutas", available: true },
+            { id: 32, category: "energeticos", name: "Furioso", description: "Bebida energética", volume: "473ml", price: 7.99, image: "https://images.unsplash.com/photo-1622483767028-3f66f32aef97?auto=format&fit=crop&w=400&q=80", badge: "Econômico", available: true },
+
+            // Refrigerantes & Água
+            { id: 33, category: "refrigerantes-agua", name: "Coca Cola", description: "Refrigerante de cola", volume: "2L", price: 11.99, image: "https://images.unsplash.com/photo-1622483767123-d667c2616e4d?auto=format&fit=crop&w=400&q=80", badge: null, available: true },
+            { id: 34, category: "refrigerantes-agua", name: "Coca Cola", description: "Refrigerante de cola", volume: "350ml", price: 5.99, image: "https://images.unsplash.com/photo-1622483767123-d667c2616e4d?auto=format&fit=crop&w=400&q=80", badge: null, available: true },
+            { id: 35, category: "refrigerantes-agua", name: "Água Mineral", description: "Sem gás", volume: "500ml", price: 3.50, image: "https://images.unsplash.com/photo-1548839140-29a749e1cf4d?auto=format&fit=crop&w=400&q=80", badge: null, available: true },
+            { id: 36, category: "refrigerantes-agua", name: "Água Mineral", description: "Com gás", volume: "500ml", price: 4.00, image: "https://images.unsplash.com/photo-1548839140-29a749e1cf4d?auto=format&fit=crop&w=400&q=80", badge: null, available: true },
+
+            // Petiscos & Conveniência
+            { id: 37, category: "petiscos-conveniencia", name: "Doritos", description: "Salgadinho de milho", volume: "90g", price: 8.99, image: "https://images.unsplash.com/photo-1621447504864-d8686e12698c?auto=format&fit=crop&w=400&q=80", badge: null, available: true },
+            { id: 38, category: "petiscos-conveniencia", name: "Pringles", description: "Batata em chips", volume: "100g", price: 12.90, image: "https://images.unsplash.com/photo-1621447504864-d8686e12698c?auto=format&fit=crop&w=400&q=80", badge: null, available: true },
+            { id: 39, category: "petiscos-conveniencia", name: "Batata Frita", description: "Snack de batata", volume: "150g", price: 9.90, image: "https://images.unsplash.com/photo-1621447504864-d8686e12698c?auto=format&fit=crop&w=400&q=80", badge: null, available: true },
+            { id: 40, category: "petiscos-conveniencia", name: "Amendoim Japonês", description: "Petisco tradicional", volume: "200g", price: 6.99, image: "https://images.unsplash.com/photo-1621447504864-d8686e12698c?auto=format&fit=crop&w=400&q=80", badge: null, available: true },
+            { id: 41, category: "petiscos-conveniencia", name: "Carvão para Churrasco", description: "Carvão vegetal", volume: "3kg", price: 18.90, image: "https://images.unsplash.com/photo-1555012493-27438e82564a?auto=format&fit=crop&w=400&q=80", badge: "Churrasco", available: true },
+
+            // Combos
+            { id: 42, category: "combos", name: "Combo Gin", description: "Gin Rocks + Energético + Gelo saborizado", volume: "Combo", price: 59.90, image: "https://images.unsplash.com/photo-1514362545857-3bc16c4c7d1b?auto=format&fit=crop&w=400&q=80", badge: "COMBO", available: true },
+            { id: 43, category: "combos", name: "Combo Whisky", description: "Black & White + Energético + Gelo", volume: "Combo", price: 99.90, image: "https://images.unsplash.com/photo-1527281400683-1aae777175f8?auto=format&fit=crop&w=400&q=80", badge: "COMBO", available: true },
+            { id: 44, category: "combos", name: "Combo Cerveja", description: "6 Cervejas 350ml + Gelo 1kg", volume: "Combo", price: 39.90, image: "https://images.unsplash.com/photo-1608270586620-248524c67de9?auto=format&fit=crop&w=400&q=80", badge: "MAIS PEDIDO", available: true },
+            { id: 45, category: "combos", name: "Combo Churrasco", description: "6 Cervejas + Água + Refri 2L + Carvão 3kg", volume: "Combo", price: 69.90, image: "https://images.unsplash.com/photo-1555012493-27438e82564a?auto=format&fit=crop&w=400&q=80", badge: "COMBO", available: true }
+        ];
+
+        // State
+        let currentCategory = 'todos';
+        let searchQuery = '';
+
+        // Utility Functions
+        function formatPrice(price) {
+            return price.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' });
+        }
+
+        function generateWhatsAppLink(product) {
+            const message = `Olá! Quero pedir:\n${product.name} (${product.volume})\nPreço: ${formatPrice(product.price)}\n\nPode me informar a disponibilidade e as opções de entrega?`;
+            return `https://wa.me/${BUSINESS_CONFIG.whatsapp}?text=${encodeURIComponent(message)}`;
+        }
+
+        // Rendering Functions
+        function createProductCard(product) {
+            if (!product.available) {
+                return `
+                    <article class="bg-gray-100 rounded-xl border border-gray-200 overflow-hidden flex flex-col opacity-75">
+                        <div class="relative">
+                            <img src="${product.image}" alt="${product.name} ${product.volume}" class="w-full h-48 object-cover grayscale" loading="lazy">
+                            <span class="absolute top-2 left-2 bg-gray-600 text-white text-xs font-bold px-2 py-1 rounded">Indisponível</span>
+                        </div>
+                        <div class="p-4 flex flex-col flex-grow">
+                            <h3 class="text-geladao-graphite font-bold text-lg leading-tight mb-1">${product.name}</h3>
+                            <p class="text-gray-500 text-sm mb-3 flex-grow">${product.description}</p>
+                            <div class="flex items-end justify-between mt-auto pt-3 border-t border-gray-200">
+                                <div>
+                                    <span class="text-xs text-gray-500 block mb-1">${product.volume}</span>
+                                    <span class="text-gray-600 font-extrabold text-xl">${formatPrice(product.price)}</span>
+                                </div>
+                                <span class="text-sm text-gray-500 font-medium">Esgotado</span>
+                            </div>
+                        </div>
+                    </article>
+                `;
+            }
+
+            return `
+                <article class="bg-geladao-white rounded-xl shadow-sm border border-gray-100 overflow-hidden flex flex-col hover:shadow-md transition-shadow duration-300">
+                    <div class="relative">
+                        <img src="${product.image}" alt="${product.name} ${product.volume}" class="w-full h-48 object-cover" loading="lazy">
+                        ${product.badge ? `<span class="absolute top-2 left-2 bg-geladao-red text-white text-xs font-bold px-2 py-1 rounded shadow-sm">${product.badge}</span>` : ''}
+                    </div>
+                    <div class="p-4 flex flex-col flex-grow">
+                        <h3 class="text-geladao-graphite font-bold text-lg leading-tight mb-1">${product.name}</h3>
+                        <p class="text-gray-500 text-sm mb-3 flex-grow">${product.description}</p>
+                        <div class="flex items-end justify-between mt-auto pt-3 border-t border-gray-100">
+                            <div>
+                                <span class="text-xs text-gray-500 block mb-1">${product.volume}</span>
+                                <span class="text-geladao-navy font-extrabold text-xl">${formatPrice(product.price)}</span>
+                            </div>
+                            <a href="${generateWhatsAppLink(product)}" target="_blank" rel="noopener noreferrer" class="bg-geladao-red hover:bg-red-700 text-white font-semibold py-2 px-4 rounded-lg flex items-center gap-2 transition-colors focus-ring" aria-label="Pedir ${product.name} no WhatsApp">
+                                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+                                Pedir
+                            </a>
+                        </div>
+                    </div>
+                </article>
+            `;
+        }
+
+        function renderProducts() {
+            const container = document.getElementById('products-container');
+            const combosContainer = document.getElementById('combos-container');
+            
+            // Filter logic
+            const filtered = products.filter(p => {
+                const matchesSearch = p.name.toLowerCase().includes(searchQuery) || 
+                                      p.description.toLowerCase().includes(searchQuery) || 
+                                      p.volume.toLowerCase().includes(searchQuery) ||
+                                      p.category.toLowerCase().includes(searchQuery);
+                const matchesCategory = currentCategory === 'todos' || p.category === currentCategory;
+                return matchesSearch && matchesCategory;
+            });
+
+            // Update count
+            document.getElementById('product-count').textContent = `${filtered.length} produto(s) encontrado(s)`;
+
+            // Render Combos separately if 'todos' or 'combos' is selected
+            if (currentCategory === 'todos' || currentCategory === 'combos') {
+                const combos = products.filter(p => p.category === 'combos' && p.available);
+                combosContainer.innerHTML = combos.map(createProductCard).join('');
+                combosContainer.parentElement.style.display = 'block';
+            } else {
+                combosContainer.parentElement.style.display = 'none';
+            }
+
+            // Render Main Products (exclude combos from main grid if we want them separate, or include them. Prompt says "Combos section" separate, so let's filter them out of main grid for cleanliness)
+            const mainProducts = filtered.filter(p => p.category !== 'combos');
+
+            if (mainProducts.length === 0 && (currentCategory === 'todos' || currentCategory !== 'combos')) {
+                container.innerHTML = `
+                    <div class="col-span-full text-center py-12">
+                        <p class="text-geladao-graphite text-lg font-semibold mb-2">Não encontramos esse produto.</p>
+                        <p class="text-gray-500 mb-4">Tente buscar por outra marca, categoria ou sabor.</p>
+                        <button onclick="clearFilters()" class="bg-geladao-navy text-white px-6 py-2 rounded-lg hover:bg-opacity-90 transition-colors focus-ring">Ver todos os produtos</button>
+                    </div>
+                `;
+                return;
+            }
+
+            container.innerHTML = mainProducts.map(createProductCard).join('');
+        }
+
+        // Interaction Functions
+        function setCategory(category) {
+            currentCategory = category;
+            
+            // Update UI buttons
+            document.querySelectorAll('.category-btn').forEach(btn => {
+                if (btn.dataset.category === category) {
+                    btn.classList.remove('bg-gray-100', 'text-geladao-graphite', 'hover:bg-gray-200');
+                    if (category === 'combos') {
+                        btn.classList.add('bg-geladao-red', 'text-white');
+                    } else {
+                        btn.classList.add('bg-geladao-navy', 'text-white');
+                    }
+                } else {
+                    btn.classList.add('bg-gray-100', 'text-geladao-graphite', 'hover:bg-gray-200');
+                    btn.classList.remove('bg-geladao-navy', 'text-white', 'bg-geladao-red');
+                }
+            });
+
+            // Scroll to cardapio if not there
+            if (category !== 'todos') {
+                document.getElementById('cardapio').scrollIntoView({ behavior: 'smooth' });
+            }
+
+            renderProducts();
+        }
+
+        function handleSearch(e) {
+            searchQuery = e.target.value.toLowerCase().trim();
+            renderProducts();
+        }
+
+        function clearSearch() {
+            document.getElementById('searchInput').value = '';
+            searchQuery = '';
+            renderProducts();
+        }
+
+        function clearFilters() {
+            currentCategory = 'todos';
+            searchQuery = '';
+            document.getElementById('searchInput').value = '';
+            setCategory('todos');
+        }
+
+        // Mobile Menu Toggle
+        document.getElementById('mobileMenuBtn').addEventListener('click', () => {
+            const menu = document.getElementById('mobileMenu');
+            const isHidden = menu.classList.contains('hidden');
+            if (isHidden) {
+                menu.classList.remove('hidden');
+                document.getElementById('mobileMenuBtn').setAttribute('aria-expanded', 'true');
+            } else {
+                menu.classList.add('hidden');
+                document.getElementById('mobileMenuBtn').setAttribute('aria-expanded', 'false');
+            }
+        });
+
+        // Close mobile menu when clicking a link
+        document.querySelectorAll('#mobileMenu a').forEach(link => {
+            link.addEventListener('click', () => {
+                document.getElementById('mobileMenu').classList.add('hidden');
+                document.getElementById('mobileMenuBtn').setAttribute('aria-expanded', 'false');
+            });
+        });
+
+        // Event Listeners
+        document.getElementById('searchInput').addEventListener('input', handleSearch);
+
+        // Initial Render
+        document.addEventListener('DOMContentLoaded', () => {
+            renderProducts();
+        });
+    </script>
+</body>
+</html>
